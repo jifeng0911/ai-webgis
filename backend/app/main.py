@@ -1,5 +1,4 @@
 import os
-import shutil
 import tempfile
 import zipfile
 import asyncio
@@ -9,7 +8,7 @@ from sqlalchemy import text
 import geopandas as gpd
 
 # 导入我们的数据库组件
-from database import get_db, engine_sync
+from backend.app.database import get_db, engine_sync
 
 app = FastAPI(
     title="AI-WebGIS Platform API",
